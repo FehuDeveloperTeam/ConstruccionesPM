@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import "tailwindcss";
+@theme {
+  --color-brand-dark: #1A202C;
+  --color-brand-primary: #4F46E5;
+  --color-brand-accent: #F97316;
+  --font-sans: 'Poppins', system-ui, sans-serif;
+}
+@layer utilities {
+  .perspective { perspective: 1000px; }
+  .preserve-3d { transform-style: preserve-3d; }
+  .backface-hidden { backface-visibility: hidden; }
+  .rotate-y-180 { transform: rotateY(180deg); }
+}
