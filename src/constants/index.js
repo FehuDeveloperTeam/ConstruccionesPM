@@ -119,5 +119,26 @@ export const TESTIMONIALS = [
     location: "Cliente Residencial",
     text: "Hicieron la ampliación de mi cocina y el cambio de sistema eléctrico. Me dio mucha confianza que Patricio supervisara todo personalmente. 100% recomendados.",
     rating: 5
+  },
+  {
+    id: 4,
+    name: "Agrícola Santa María",
+    location: "Jefe de Planta, Los Ángeles",
+    text: "La instalación de nuestros tableros de fuerza fue impecable. Patricio no solo ejecutó la obra, sino que tramitó toda la regularización SEC. Un alivio contar con expertos.",
+    rating: 5
+  },
+  {
+    id: 5,
+    name: "Familia Araya",
+    location: "Remodelación en Coihueco",
+    text: "Transformaron nuestro patio con un radier y quincho espectacular. Lo mejor fue la limpieza durante la obra y el cumplimiento exacto de los plazos acordados.",
+    rating: 5
+  },
+  {
+    id: 6,
+    name: "Esteban Ruiz",
+    location: "Parcela en San Carlos",
+    text: "Coticé en varios lados para el cierre bulldog (pandereta) y me quedé con ellos por la transparencia. El muro quedó alineado perfecto y terminaron antes de lo previsto.",
+    rating: 5
   }
 ];
