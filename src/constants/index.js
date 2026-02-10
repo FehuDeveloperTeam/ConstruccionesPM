@@ -1,5 +1,16 @@
 import { Zap, Hammer, ShieldCheck } from 'lucide-react';
 
+// --- IMPORTACIÓN DE IMÁGENES (Asegúrate de tenerlas en assets) ---
+import imgAcmafor from '../assets/images/malla-acmafor.jpg'; 
+import imgBulldog from '../assets/images/pandereta-bulldog.jpg';
+import imgBizcocho from '../assets/images/malla-bizcocho.jpg';
+import imgParcela from '../assets/images/cierre-parcela.jpg';
+import imgIndustrial from '../assets/images/proyecto-industrial.jpg';
+import imgCasa from '../assets/images/casa-residencial.jpg';
+import imgTablero from '../assets/images/tablero-electrico.jpg';
+import imgEmpalme from '../assets/images/empalme-rural.jpg';
+
+// --- SERVICIOS ---
 export const SERVICE_AREAS = [
   {
     id: 'electricidad',
@@ -10,7 +21,7 @@ export const SERVICE_AREAS = [
       'Trámite de Empalmes',
       'Instalaciones Eléctricas',
       'Certificados TE1 (Firma Autorizada)',
-      'Proyectos Residenciales (Urbano/Rural)',
+      'Proyectos Residenciales y Rurales',
       'Montaje Industrial'
     ]
   },
@@ -30,25 +41,83 @@ export const SERVICE_AREAS = [
   }
 ];
 
+// --- TIPOS DE CIERRES ---
 export const FENCE_TYPES = [
   {
     name: 'Malla Acmafor 3D',
     desc: 'Alta seguridad y estética moderna. Ideal para parcelas y empresas.',
-    image: 'https://images.unsplash.com/photo-1621262077726-2c1b211a586d?q=80&w=400' 
+    image: imgAcmafor 
   },
   {
     name: 'Malla Bizcocho',
-    desc: 'La solución clásica y económica. Galvanizada con postes de pino impregnado.',
-    image: 'https://images.unsplash.com/photo-1599156486088-724393699742?q=80&w=400'
+    desc: 'La solución clásica y económica. Galvanizada con postes impregnados.',
+    image: imgBizcocho
   },
   {
     name: 'Pandereta Bulldog',
     desc: 'Privacidad total y máxima robustez. Placas de hormigón reforzado.',
-    image: 'https://images.unsplash.com/photo-1597587823528-9f170e5c986c?q=80&w=400'
+    image: imgBulldog
   },
   {
     name: 'Cierres Agrícolas',
     desc: 'Polines y alambre de púas para delimitación de grandes extensiones.',
-    image: 'https://images.unsplash.com/photo-1563297129-d546059cb274?q=80&w=400'
+    image: imgParcela 
+  }
+];
+
+// --- PROYECTOS REALIZADOS (4 Items: Elec, Const, Cierre, Mixto) ---
+export const PROJECTS = [
+  {
+    id: 1,
+    title: "Sala Eléctrica Industrial",
+    category: "Electricidad SEC",
+    description: "Montaje de tableros de fuerza y control para planta agroindustrial. Certificación TE1 aprobada sin observaciones.",
+    image: imgTablero
+  },
+  {
+    id: 2,
+    title: "Cierre Parcela 5.000m²",
+    category: "Cierres Perimetrales",
+    description: "Instalación de 400 metros lineales de Malla Acmafor con portón automático incluido en tiempo récord.",
+    image: imgAcmafor
+  },
+  {
+    id: 3,
+    title: "Casa Mediterránea",
+    category: "Construcción Civil",
+    description: "Construcción llave en mano de vivienda unifamiliar de 140m². Radier, obra gruesa y terminaciones finas.",
+    image: imgCasa
+  },
+  {
+    id: 4,
+    title: "Empalme zona rural",
+    category: "Electricidad SEC",
+    description: "Implementación de empalme eléctrico para parcela en zona rural. Incluye instalación de poste, cableado y certificación final.",
+    image: imgEmpalme
+  }
+];
+
+// --- TESTIMONIOS (NUEVO) ---
+export const TESTIMONIALS = [
+  {
+    id: 1,
+    name: "Roberto Gómez",
+    location: "Dueño de Parcela, Chillán",
+    text: "Necesitaba cerrar mi parcela urgente por seguridad. El equipo de Patricio instaló todo en 4 días. Muy prolijos y el portón quedó funcionando perfecto.",
+    rating: 5
+  },
+  {
+    id: 2,
+    name: "Constructora H&M",
+    location: "Gerencia de Proyectos",
+    text: "Trabajamos con Construcciones PM para la certificación eléctrica de nuestras obras. Son los únicos que nos entregan los TE1 a tiempo. Socios estratégicos.",
+    rating: 5
+  },
+  {
+    id: 3,
+    name: "Carmen Valenzuela",
+    location: "Cliente Residencial",
+    text: "Hicieron la ampliación de mi cocina y el cambio de sistema eléctrico. Me dio mucha confianza que Patricio supervisara todo personalmente. 100% recomendados.",
+    rating: 5
   }
 ];

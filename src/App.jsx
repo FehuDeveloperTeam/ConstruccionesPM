@@ -1,12 +1,13 @@
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
-import { Services } from './components/Services'; // NUEVO
-import { PerimeterSection } from './components/PerimeterSection'; // NUEVO
+import { Services } from './components/Services';
+import { PerimeterSection } from './components/PerimeterSection';
 import { ProjectCard } from './components/ProjectCard';
+import { Testimonials } from './components/Testimonials'; // <--- Importar Testimonios
 import { Footer } from './components/Footer';
 
-// ... MOCK_PROJECTS (mantenlo igual) ...
+import { PROJECTS } from './constants'; 
 
 function App() {
   return (
@@ -16,27 +17,32 @@ function App() {
       <main>
         <Hero />
         <About />
-        
-        {/* Servicios: Electricidad y Construcción */}
         <Services />
-        
-        {/* Sección Especial: Cierres Perimetrales */}
         <PerimeterSection />
         
-        {/* Sección de Proyectos (existente) */}
+        {/* Sección de Proyectos (Ahora soporta 4 columnas) */}
         <section id="proyectos" className="py-24 bg-gray-50">
-          {/* ... contenido existente ... */}
-           <div className="container mx-auto px-6">
-            <div className="text-center mb-16">
-              <span className="text-brand-primary font-bold tracking-widest uppercase text-sm">Portafolio</span>
-              <h2 className="text-4xl font-bold text-brand-dark mt-2">Proyectos Destacados</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
-                {/* Asegúrate de tener importada MOCK_PROJECTS o definela arriba */}
-                {/* MOCK_PROJECTS.map... */}
-              </div>
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-12">
+              <span className="text-brand-primary font-bold tracking-widest uppercase text-sm">Portafolio Reciente</span>
+              <h2 className="text-4xl font-bold text-brand-dark mt-2">Nuestros Proyectos</h2>
+              <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+                Calidad certificada en Electricidad, Construcción y Cierres.
+              </p>
+            </div>
+            
+            {/* Grid ajustado para 4 items: en móvil 1, tablet 2, desktop grande 4 */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {PROJECTS.map(project => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
             </div>
           </div>
         </section>
+
+        {/* Nueva Sección de Testimonios */}
+        <Testimonials />
+
       </main>
 
       <Footer />
