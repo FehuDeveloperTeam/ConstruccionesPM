@@ -5,6 +5,7 @@ import { Services } from './components/Services';
 import { PerimeterSection } from './components/PerimeterSection';
 import { ProjectCard } from './components/ProjectCard';
 import { Testimonials } from './components/Testimonials'; // <--- Importar Testimonios
+import { WhatsAppButton } from './components/WhatsappButton';
 import { Footer } from './components/Footer';
 
 import { PROJECTS } from './constants'; 
@@ -44,7 +45,7 @@ function App() {
         <Testimonials />
 
       </main>
-
+      <WhatsAppButton />
       <Footer />
     </div>
   );
