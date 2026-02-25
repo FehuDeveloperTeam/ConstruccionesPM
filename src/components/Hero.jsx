@@ -1,5 +1,5 @@
 import { ArrowRight } from 'lucide-react';
-import imgPortada from '../assets/images/portada.jpg'; // Asegúrate de que esta ruta sea correcta
+import imgPortada from '../assets/images/portada.jpeg'; // Asegúrate de que esta ruta sea correcta
 
 export const Hero = () => {
   return (
