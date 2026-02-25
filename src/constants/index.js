@@ -9,6 +9,7 @@ import imgIndustrial from '../assets/images/proyecto-industrial.jpg';
 import imgCasa from '../assets/images/casa-residencial.jpg';
 import imgTablero from '../assets/images/tablero-electrico.jpg';
 import imgEmpalme from '../assets/images/empalme-rural.jpg';
+import imgPortada from '../assets/images/portada.jpg';
 
 // --- SERVICIOS ---
 export const SERVICE_AREAS = [

@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import imgPortada from '../assets/images/portada.jpg'; // Asegúrate de que esta ruta sea correcta
 
 export const Hero = () => {
   return (
@@ -6,7 +7,7 @@ export const Hero = () => {
       {/* Fondo con imagen y overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2069" 
+          src={imgPortada} 
           alt="Construcción Industrial" 
           className="w-full h-full object-cover"
         />
